@@ -196,7 +196,7 @@ function Hero({ onViewWork }) {
                 View My Work ↓
               </button>
 
-              <a href="/KASHYAP_SHARMA_ANDROID-DEVELOPER_RESUME.pdf" download className="inline-flex items-center gap-2 t-btn-secondary">
+              <a href="./KASHYAP_SHARMA_ANDROID-DEVELOPER_RESUME.pdf" download className="inline-flex items-center gap-2 t-btn-secondary">
                 <Download className="w-4 h-4" />
                 Download Resume
               </a>
@@ -215,7 +215,7 @@ function Hero({ onViewWork }) {
 
           <div className="hidden md:flex justify-center">
             <div className="w-[320px] h-[320px] rounded-2xl p-2 flex items-center justify-center overflow-hidden t-card2">
-              <img src="public/kashyap.jpg" className="w-full h-full object-cover rounded-xl" />
+              <img src="./kashyap.jpg" className="w-full h-full object-cover rounded-xl" />
             </div>
           </div>
         </div>
@@ -228,8 +228,8 @@ function About() {
   return (
     <section id="about" data-reveal className="py-12">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="t-card p-6">
           <h3 className="sec-title">About</h3>
+          <div className="t-card p-6">
           <p className="mt-4 t-body">I'm Kashyap Sharma, a Junior Android Developer from Kheda / Ahmedabad. Currently working at IQ Infinite Technologies Pvt. Ltd., I focus on creating performant and user-friendly Android applications using Kotlin, Jetpack Compose, and modern Android architecture patterns.</p>
 
           <div className="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-4">
@@ -392,25 +392,25 @@ function Projects() {
       title: 'Rummy Scorer',
       desc: 'Android scoring app – set counts, track moves and analyse games. Available on Play Store.',
       link: 'https://play.google.com/store/apps/details?id=com.app.rummyscorer&hl=en_IN',
-      img: '/rummy-scorer.png',
+      img: './rummy-scorer.png',
     },
     {
       title: 'Password Manager',
       desc: 'Secure Android password manager using Jetpack Compose & Material3, AES/GCM encryption with Android Keystore, MVVM & Room.',
-      link: '#',
-      img: '/password-manager.png',
+      link: 'https://github.com/Kash0209sharma/PasswordManager-',
+      img: './password.jpeg',
     },
     {
-      title: 'PlayStore App',
-      desc: 'High‑performance Android application written in Kotlin & Compose, available on Play Store.',
-      link: 'https://play.google.com/store/apps/details?id=com.example.app',
-      img: '/playstore-screenshot.png',
+      title: 'KachuFul',
+      desc: 'Android card game application available on Play Store. Features real-time gameplay, intuitive UI, and smooth animations.',
+      link: 'https://play.google.com/store/apps/details?id=com.app.judgementalscore&hl=en_IN',
+      img: './kachuful.jpeg',
     },
     {
       title: 'Portfolio Website',
       desc: 'This very site – built with React, Tailwind CSS and modern JS tooling.',
-      link: '#top',
-      img: '/portfolio-screenshot.png',
+      link: 'https://github.com/Kash0209sharma/portfolio',
+      img: './portfolio.jpeg',
     },
   ];
 
@@ -510,6 +510,7 @@ function Footer() {
         <div className="mt-3 flex items-center justify-center gap-4">
           <a className="t-accent" href="https://www.linkedin.com/in/kashyap-sharma-232b83258">LinkedIn</a>
           <a className="t-accent" href="https://github.com/kashyapsharma2902">GitHub</a>
+          <a className="t-accent" href="https://www.instagram.com/kashyap292_s?igsh=ODNvb2FwY3A3bjdv">Instagram</a>
         </div>
       </div>
     </footer>
