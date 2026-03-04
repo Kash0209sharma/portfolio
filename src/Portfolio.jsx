@@ -25,8 +25,7 @@ const NAV_LINKS = [
 
 const TYPING_PHRASES = [
   'Kotlin Developer',
-  'Jetpack Compose',
-  'MVVM Architect',
+  'Android Developer',
   'Firebase Integrator',
   'Play Store Publisher',
 ];
@@ -177,7 +176,8 @@ function Navbar({ onNavigate, theme, setTheme }) {
 }
 
 function Hero({ onViewWork }) {
-  const typed = useTyping(TYPING_PHRASES, 80, 1400);
+  // slower typing cycle: speed 200ms per character, pause 2000ms between phrases
+  const typed = useTyping(TYPING_PHRASES, 200, 2000);
 
   return (
     <section id="top" className="min-h-[72vh] flex items-center" aria-label="hero">
@@ -643,7 +643,8 @@ export default function App() {
     };
   }, []);
 
-  const typed = useTyping(TYPING_PHRASES, 80, 1400); // ensure hero also uses typing
+  // hero heading also slowed to match
+  const typed = useTyping(TYPING_PHRASES, 200, 2000);
 
   // sync theme attribute
   useEffect(() => {
