@@ -389,6 +389,12 @@ function Certifications() {
 function Projects() {
   const projects = [
     {
+    title: 'KYM Admin App',
+    desc: 'Android admin app for Kheda Yuvak Mandal — member registration, QR-based attendance, digital ID card generation with WhatsApp sharing. Built with Kotlin, MVVM, Room DB, ZXing QR & Navigation Component.',
+    link: 'https://github.com/Kash0209sharma/PasswordManager-',
+    img: './kym_admin.png',
+   },
+    {
       title: 'Rummy Scorer',
       desc: 'Android scoring app – set counts, track moves and analyse games. Available on Play Store.',
       link: 'https://play.google.com/store/apps/details?id=com.app.rummyscorer&hl=en_IN',
