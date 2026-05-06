@@ -196,7 +196,7 @@ function Hero({ onViewWork }) {
                 View My Work ↓
               </button>
 
-              <a href="./KASHYAP_SHARMA_ANDROID-DEVELOPER_RESUME.pdf" download className="inline-flex items-center gap-2 t-btn-secondary">
+              <a href="./Kashyap_Sharma_Android_Developer_Resume.pdf" download className="inline-flex items-center gap-2 t-btn-secondary">
                 <Download className="w-4 h-4" />
                 Download Resume
               </a>
